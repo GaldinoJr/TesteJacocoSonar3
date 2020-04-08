@@ -78,9 +78,7 @@ Com essa configuração você pode rodar o cover de teste unitário e visualizar
 ```bash
 ./gradlew jacocoTestReport{nome da sua flavor}
  ```
-
-![enter image description here](https://raw.githubusercontent.com/GaldinoJr/TesteJacocoSonar/master/app/src/main/res/drawable-v24/Captura%20de%20Tela%202020-04-01%20%C3%A0s%2020.14.58.png)
-
+ ![enter image description here](https://raw.githubusercontent.com/GaldinoJr/TesteJacocoSonar3/master/app/src/main/res/drawable-v24/jacoco_picture.png)
 # Adicione o plugin do SonarQube
   Primeiro, adicione ao build.gradle de nível de projeto:
 
@@ -123,12 +121,12 @@ sonarqube {
                         '**/di/**,' +
                         '**/gps/**,'
 
-  property "sonar.projectName", "App-Test-Jacoco-Sonar3"
-  property "sonar.projectKey", "App-Test-Jacoco-Sonar3"
+  property "sonar.projectName", "App-Vidalink-Android-TESTE-4"
+  property "sonar.projectKey", "App-Vidalink-Android-TESTE-4"
   property "sonar.host.url", "http://localhost:9000"
   // retirar para rodar local
-//            property "sonar.host.url", "url do host"
-//            property "sonar.login", "token do projeto"
+//            property "sonar.host.url", "http://35.247.249.42:9000/"
+//            property "sonar.login", "ad582835bec9886be86a90fe7b7b31d556795e6a"
 //            property "sonar.password", ""
 
 //            property "sonar.scm.provider", "git"
@@ -156,8 +154,7 @@ Com essa configuração você pode rodar os cover de teste unitário e subir o p
 ```bash
 ./gradlew jacocoTestReport{nome da sua flavor} sonarqube
 ```
-
-![enter image description here](https://raw.githubusercontent.com/GaldinoJr/TesteJacocoSonar/master/app/src/main/res/drawable-v24/Captura%20de%20Tela%202020-04-01%20%C3%A0s%2020.13.28.png)
+  ![enter image description here](https://raw.githubusercontent.com/GaldinoJr/TesteJacocoSonar3/master/app/src/main/res/drawable-v24/sonar_picture.png)
 
 Obs.: O comando muda conforme a flavor, rode o comando:
 
