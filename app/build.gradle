@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.android.application'
-apply plugin: 'jacoco-android'
+apply plugin: 'jacoco'
 apply plugin: "org.sonarqube"
 // importar o arquivo do jacoco e do sonar
 apply from: './jacoco.gradle'

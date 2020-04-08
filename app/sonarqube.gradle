@@ -1,28 +1,28 @@
 sonarqube {
-    properties {
-            property "sonar.projectName", "TestJacocoSonar2"
-            property "sonar.projectKey", "TestJacocoSonar2"
-            property "sonar.host.url", "http://localhost:9000"
-            // colocar para rodar no server
-            // property "sonar.host.url", "url do host"
-            // property "sonar.login", "key"
-            // property "sonar.password", ""
-            property "sonar.exclusions",
-                    '**/MainPresenter2**,' +
-                    '**/*Activity*'
+        properties {
+                property "sonar.exclusions",
+                        '**/MyApplication**,' +
+                                '**/domain/**,' +
+                                '**/di/**,' +
+                                '**/gps/**,'
 
-            property "sonar.sources", "src/main"
-            property "sonar.java.binaries", "build/tmp/kotlin-classes"
-            property "sonar.tests", "src/test"
+                property "sonar.projectName", "App-Vidalink-Android-TESTE-4"
+                property "sonar.projectKey", "App-Vidalink-Android-TESTE-4"
+                property "sonar.host.url", "http://localhost:9000"
+                // retirar para rodar local
+//            property "sonar.host.url", "url do sonar"
+//            property "sonar.login", "token do projeto no sonar"
+//            property "sonar.password", ""
 
-            // ver o caminho do xml
-            property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/jacocoTestDebugUnitTestReport/jacocoTestDebugUnitTestReport.xml"
-            // ver o caminho do xml
-            property "sonar.junit.reportsPath", "build/reports/jacoco/jacocoTestDebugUnitTestReport/"
-            property "sonar.java.coveragePlugin", "jacoco"
-            property "sonar.android.lint.report", "build/reports/lint-results.xml"
-    }
+//            property "sonar.scm.provider", "git"
+                property "sonar.sources", "src/main"
+                property "sonar.java.binaries", "build/tmp/kotlin-classes"
+                property "sonar.tests", "src/test, ./src/androidTest/"
+                property "sonar.java.coveragePlugin", "jacoco"
+                // ver o caminho do xml
+                property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/jacocoTestReportProd/jacocoTestReportProd.xml"
+                // ver o caminho do xml
+                property "sonar.junit.reportsPath", "build/reports/jacoco/jacocoTestReportProd/"
+                property "sonar.android.lint.report", "build/reports/lint-results.xml"
+        }
 }
-
-//Run:
-//./gradlew jacocoTestReport
