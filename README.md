@@ -48,13 +48,13 @@ project.afterEvaluate {
                     excludes: ['**/domain/**',
                             '**/di/**',
                             '**/gps/**'
-  ])
+					])
 
             def coverageSourceDirs = [
                     "src/main/java",
                     "src/$productFlavorName/java",
                     "src/$buildType/java"
-  ]
+			]
             additionalSourceDirs = files(coverageSourceDirs)
             sourceDirectories = files(coverageSourceDirs)
             executionData = fileTree(dir: project.projectDir, includes: ["**/*.exec", "**/*.ec"])
