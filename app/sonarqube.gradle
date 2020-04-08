@@ -6,8 +6,8 @@ sonarqube {
                                 '**/di/**,' +
                                 '**/gps/**,'
 
-                property "sonar.projectName", "App-Vidalink-Android-TESTE-4"
-                property "sonar.projectKey", "App-Vidalink-Android-TESTE-4"
+                property "sonar.projectName", "App-Test-Jacoco-Sonar"
+                property "sonar.projectKey", "App-Test-Jacoco-Sonar"
                 property "sonar.host.url", "http://localhost:9000"
                 // retirar para rodar local
 //            property "sonar.host.url", "url do sonar"

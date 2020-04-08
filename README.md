@@ -121,12 +121,12 @@ sonarqube {
                         '**/di/**,' +
                         '**/gps/**,'
 
-  property "sonar.projectName", "App-Vidalink-Android-TESTE-4"
-  property "sonar.projectKey", "App-Vidalink-Android-TESTE-4"
+  property "sonar.projectName", "App-Test-Jacoco-Sonar"
+  property "sonar.projectKey", "App-Test-Jacoco-Sonar"
   property "sonar.host.url", "http://localhost:9000"
   // retirar para rodar local
-//            property "sonar.host.url", "http://35.247.249.42:9000/"
-//            property "sonar.login", "ad582835bec9886be86a90fe7b7b31d556795e6a"
+//            property "sonar.host.url", "url do sonar"
+//            property "sonar.login", "token do projeto no sonar"
 //            property "sonar.password", ""
 
 //            property "sonar.scm.provider", "git"
