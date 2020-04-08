@@ -20,9 +20,9 @@ sonarqube {
                 property "sonar.tests", "src/test, ./src/androidTest/"
                 property "sonar.java.coveragePlugin", "jacoco"
                 // ver o caminho do xml
-                property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/jacocoTestReportProd/jacocoTestReportProd.xml"
+                property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml"
                 // ver o caminho do xml
-                property "sonar.junit.reportsPath", "build/reports/jacoco/jacocoTestReportProd/"
+                property "sonar.junit.reportsPath", "build/reports/jacoco/jacocoTestReport/"
                 property "sonar.android.lint.report", "build/reports/lint-results.xml"
         }
 }
